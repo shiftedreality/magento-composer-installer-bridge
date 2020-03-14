@@ -1,0 +1,19 @@
+{
+  "name": "shiftedreality/magento-composer-installer-bridge",
+  "description":"Composer installer for Magento modules",
+  "type": "composer-plugin",
+  "license":"OSL-3.0",
+  "require": {
+    "php": "^7.0",
+    "magento/magento-composer-installer": "*"
+  },
+  "replace": {
+    "magento/magento-composer-installer": "*"
+  },
+  "extra": {
+    "composer-command-registry": [
+      "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
+    ],
+    "class": "MagentoHackathon\\Composer\\Magento\\Plugin"
+  }
+}
