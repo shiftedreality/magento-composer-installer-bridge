@@ -5,6 +5,7 @@
   "license":"OSL-3.0",
   "require": {
     "php": "^7.0",
+    "composer-plugin-api": "^1.0",
     "magento/magento-composer-installer": "*"
   },
   "replace": {
