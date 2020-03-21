@@ -1,0 +1,6 @@
+[submodule "src/Magento"]
+	path = src/Magento
+	url = https://github.com/magento/magento-composer-installer
+[submodule "src/Composer"]
+	path = src/Composer
+	url = https://github.com/wikimedia/composer-merge-plugin

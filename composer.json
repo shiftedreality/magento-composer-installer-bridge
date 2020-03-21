@@ -9,8 +9,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Wikimedia\\Composer\\": "src/Composer",
-      "MagentoHackathon\\Composer\\Magento\\": "src/Magento"
+      "Wikimedia\\Composer\\": "src/Composer/src",
+      "MagentoHackathon\\Composer\\Magento\\": "src/Magento/src/MagentoHackathon/Composer/Magento"
     }
   },
   "replace": {
