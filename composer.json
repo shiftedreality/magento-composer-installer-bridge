@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-0": {
-      "MagentoHackathon\\Composer\\": "src/Magento"
+      "MagentoHackathon\\Composer\\Magento\\": "src/Magento"
     },
     "psr-4": {
       "Wikimedia\\Composer\\": "src/Composer"
