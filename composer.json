@@ -5,9 +5,15 @@
   "license": "OSL-3.0",
   "require": {
     "php": "^7.0",
-    "composer-plugin-api": "^1.0",
-    "magento/magento-composer-installer": "*",
-    "wikimedia/composer-merge-plugin": "^1.3"
+    "composer-plugin-api": "^1.0"
+  },
+  "autoload":{
+    "psr-0":{
+      "MagentoHackathon\\Composer\\Magento":"src/Magento"
+    },
+    "psr-4": {
+      "Wikimedia\\Composer\\": "src/Composer"
+    }
   },
   "replace": {
     "magento/magento-composer-installer": "*",
@@ -15,6 +21,7 @@
     "wikimedia/composer-merge-plugin": "*"
   },
   "extra": {
+    "composer-command-registry": [ "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand" ],
     "class": [
       "Wikimedia\\Composer\\MergePlugin",
       "MagentoHackathon\\Composer\\Magento\\Plugin"
